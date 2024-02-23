@@ -3,7 +3,7 @@ import React, { Suspense } from 'react'
 import classes from './page.module.css'
 import MealsGrid from '@/components/MealsGrid/MealsGrid'
 import { getMeals } from '@/lib/meals'
-import LoadingOut from './loadingOut'
+import LoadingOut from './LoadingOut'
 export async function Meals() {
     const meals = await getMeals()
     return <MealsGrid meals={meals} />
