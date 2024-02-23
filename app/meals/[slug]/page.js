@@ -24,7 +24,7 @@ import { notFound } from 'next/navigation'
 export default async function page({ params }) {
     console.log("slugggg", params.slug)
     const meal = getMeal(params.slug)
-    const docs =await getDocuments("65d90914512b2dd82dddfbc2ؤ");
+    const docs =await getDocuments();
     console.log("wdsafdw", docs)
     if (!meal) {
         notFound()
